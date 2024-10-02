@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% if title%}
+        <title>Dash app - {{title}}</title>
+        {% else%}
+        <title>Dash app</title>
+        {% endif%}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+<body>
+<main>
+        {% if div%}
+        <div>
+            <img src="path/to/your/image.png" alt="Logo" style="position: absolute; top: 10px; left: 10px; width: 50px; height: auto;">
+            <h1 style = "background-color: #FFDB58;text-align: center;margin-top:0px">{{div}} Dashboard </h1></div>
+        {% else%}
+        <div>Dashboard</div>
+        {% endif%}
+
+        {% block content %}
+        <div class="container" style ="display: flex; 
+            justify-content: space-between; /* Space evenly between divs */
+            margin: 20px;">
+<div style="background-color: #FBAB7E;display: inline-block; 
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%) ;width: 180px;
+; height: 80px;">
+    div1 
+</div>
+<div style="background-color: #85FFBD;display:inline-block;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);height: 80px;width:180px">
+    d2
+</div>
+<div style="background-color: #85FFBD;display:inline-block;
+background-image: linear-gradient(65deg, #85FFBD 0%, #FFFB7D 100%);height: 80px;width:180px">
+d3
+</div>
+<div style="background-color: #85FFBD;display:inline-block;
+background-image: linear-gradient(65deg, #85FFBD 0%, #FFFB7D 100%);height: 80px;width:180px">
+d4
+</div>
+<div style="background-color: #85FFBD;display:inline-block;
+background-image: linear-gradient(65deg, #85FFBD 0%, #FFFB7D 100%);height: 80vh;width:40vw">
+d4
+</div>
+
+
+</div>
+       
+        {% endblock %}
+</main>
+
+
+<footer>
+       {% if href %}
+        <a href="{{ href }}" id="m"> 
+            {% if h4%}
+             <h4 >{{h4}} Dashboard</h4>
+            {% else%}
+             <h4>Dash app</h4>
+            {% endif%}
+            
+        </a>
+       {% else %}
+        <div></div>
+       {% endif %}
+    </footer>
+    </body>
+   
+       
+</html>

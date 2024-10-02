@@ -1,0 +1,34 @@
+footer{
+    background-color: #FFDB58;
+    padding: 10px; 
+    text-align: center;
+    
+}
+/* .mspace{
+    margin: 0px;
+    align-content: center;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional but recommended for better sizing */
+}
+#m {
+    display: inline-block;
+    color: inherit; /* Inherit color from parent element */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#m:hover {
+    color: black; /* Change text color on hover */
+    transform: scale(1.2); /* Zoom effect */
+}
+#id:hover{
+    transform: scale(1.2);
+}
+#id{
+    background-color: #FBAB7E;display: inline-block; 
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%) ;
+    width: 300px;
+    height: 200px;
+}
