@@ -1,0 +1,25 @@
+# Flash-Dashboard
+structure of project->
+/flashDash
+ //application(folder)
+    ///static(folder)
+        //// style.css
+    ///templates(folder)
+        ////index.html
+        ////layout.html
+    ///__init__.py (file)
+    ///routes.py(file)
+ //myvenv(folder created from virtual env.)
+ //run.py(file)
+
+ # steps
+ 1. in cmd --> mkdir FlashDash
+ 2.           go in the dir --> cd FlashDash
+ 3.           python -m venv myvenv (creation of virtualenv)
+ 4.           code . (to open in vs code)
+ 5. open terminal in vs code--> cd myvenv
+ 6.                             cd Scripts./Activate.ps1(activating venv)
+ 7.                             
+    
+    
+
